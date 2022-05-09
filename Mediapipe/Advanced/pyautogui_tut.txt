@@ -1,0 +1,20 @@
+//////////////////////////////// LIB TO CONTROL MOUSE /////////////////////////////////////
+
+//////////// MOVE MOUSE ///////////////
+ pyautogui.moveTo(100, 200)   # moves mouse to X of 100, Y of 200.
+ pyautogui.moveTo(100, 200, 2)# moves mouse to X of 100, Y of 200 over 2 seconds
+
+//////////// DRAG MOUSE ///////////////
+ pyautogui.dragTo(100, 200, button='left')     # drag mouse to X of 100, Y of 200 while holding down left mouse button
+ pyautogui.dragTo(300, 400, 2, button='left')  # drag mouse to X of 300, Y of 400 over 2 seconds while holding down left mouse button
+ pyautogui.drag(30, 0, 2, button='right')   # drag the mouse left 30 pixels over 2 seconds while holding down the right mouse
+
+//////////// CLICK MOUSE ///////////////
+ pyautogui.click()  # click the mouse
+ pyautogui.click(button='right')  # right-click the mouse
+ pyautogui.click(clicks=2)  # double-click the left mouse button
+ pyautogui.click(clicks=2, interval=0.25)  # double-click the left mouse button, but with a quarter second pause in between clicks
+ pyautogui.click(button='right', clicks=3, interval=0.25)  ## triple-click the right mouse button with a quarter second pause in between clicks
+ pyautogui.doubleClick()  # perform a left-button double click
+
+////////////////////////////////////////////////////////////////////////////////////////////
